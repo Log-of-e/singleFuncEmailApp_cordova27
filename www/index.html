@@ -42,12 +42,29 @@
         <script type="text/javascript">
             app.initialize();
             
-            var args;
+            //var args;
+            var args={
+                subject: "Farnsdale Park",
+                body :  "  <a href=\"google.com/Bananas\">Bananas</a> <br/> foo bar",
+                toRecipients : "swayze@gmailxxx.com" , //"" ,
+                ccRecipients : "customer@gmailxxx.com", //"" ,
+                bccRecipients: "" , //"" ,
+                bIsHTML: true
+            };
             //            cordova.exec(null, null, "EmailComposer", "showEmailComposer", [args]);
             
             </script>
         
-        <center><button onclick="cordova.exec(null, null, 'EmailComposer', 'showEmailComposer', [args]);">Compose Email</button></center>
+        <center><button onclick="cordova.exec(null, null, 'EmailComposer', 'showEmailComposer', [args]);">Compose Email</button>
+        <br/><br/>
+        
+        <button onClick="window.location.href='mailto:patrick@gmailxx.com?subject=farnsworth park';"  >Email Patrick Swayze using mailto</button>
+        <br/><br/>
+
+        <a href="mailto:baby@gmailxx.com?subject=farnsworth park"  >Email Dirty Dancing's Baby using mailto</a>
+        
+        </center>
+
         
         
     </body>
